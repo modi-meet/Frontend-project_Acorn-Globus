@@ -3,7 +3,7 @@ import Topbar from '../components/Topbar';
 
 function MainContent({ children }) {
   return (
-    <main className="flex-1 bg-gray-50 p-6">
+    <main className="flex-1 bg-background p-6 overflow-auto">
       {children}
     </main>
   );
@@ -11,7 +11,7 @@ function MainContent({ children }) {
 
 function DashboardLayout() {
   return (
-    <div className="flex min-w-[1280px] min-h-screen">
+    <div className="flex min-w-[1280px] min-h-screen bg-background">
       <Sidebar />
       <div className="flex flex-col flex-1">
         <Topbar />
