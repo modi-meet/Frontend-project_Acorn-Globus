@@ -1,10 +1,4 @@
-function Sidebar() {
-  return (
-    <aside className="w-56 min-h-screen bg-gray-100 shrink-0">
-      {/* Sidebar region */}
-    </aside>
-  );
-}
+import Sidebar from '../components/Sidebar';
 
 function Topbar() {
   return (
