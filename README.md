@@ -1,0 +1,1 @@
+# Frontend-focused Assignment Project - Acorn Globus
