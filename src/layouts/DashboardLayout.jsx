@@ -1,12 +1,5 @@
 import Sidebar from '../components/Sidebar';
-
-function Topbar() {
-  return (
-    <header className="h-16 bg-gray-200">
-      {/* Topbar region */}
-    </header>
-  );
-}
+import Topbar from '../components/Topbar';
 
 function MainContent({ children }) {
   return (
