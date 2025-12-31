@@ -11,9 +11,9 @@ function MainContent({ children }) {
 
 function DashboardLayout() {
   return (
-    <div className="flex min-w-[1280px] min-h-screen bg-background">
+    <div className="flex min-w-[1280px] h-screen bg-background overflow-hidden">
       <Sidebar />
-      <div className="flex flex-col flex-1">
+      <div className="flex flex-col flex-1 min-w-0 overflow-hidden">
         <Topbar />
         <MainContent>
           {/* Main content region */}

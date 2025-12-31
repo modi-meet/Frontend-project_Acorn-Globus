@@ -1,6 +1,6 @@
 function Sidebar() {
   return (
-    <aside className="w-56 min-h-screen flex flex-col bg-surface border-r border-border shrink-0">
+    <aside className="w-56 h-screen flex flex-col bg-surface border-r border-border shrink-0 sticky top-0">
       <div className="px-4 py-5">
         <div className="flex items-center gap-2 cursor-pointer">
           <div className="w-7 h-7 rounded-lg bg-text-primary flex items-center justify-center">
