@@ -1,88 +1,91 @@
 function Sidebar() {
   return (
     <aside className="w-56 min-h-screen flex flex-col bg-surface border-r border-border shrink-0">
-      <div className="p-4">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-text-primary flex items-center justify-center">
-            <span className="text-surface font-semibold text-sm">C</span>
+      <div className="px-4 py-5">
+        <div className="flex items-center gap-2 cursor-pointer">
+          <div className="w-7 h-7 rounded-lg bg-text-primary flex items-center justify-center">
+            <span className="text-surface font-semibold text-xs">C</span>
           </div>
           <span className="text-sm font-medium text-text-primary">Codename.com</span>
+          <span className="text-text-muted text-xs ml-auto">⌄</span>
         </div>
       </div>
 
-      <nav className="flex-1 py-2 overflow-y-auto">
-        <ul className="space-y-0.5">
-          <li className="px-4 py-2 text-sm text-text-secondary">☆ Starred</li>
-          <li className="px-4 py-2 text-sm text-text-secondary">↻ Recent</li>
+      <nav className="flex-1 py-1 overflow-y-auto">
+        <ul className="space-y-0.5 px-2">
+          <li className="px-3 py-1.5 text-sm text-text-secondary rounded-md cursor-pointer hover:bg-background">☆ Starred</li>
+          <li className="px-3 py-1.5 text-sm text-text-secondary rounded-md cursor-pointer hover:bg-background">↻ Recent</li>
         </ul>
 
-        <ul className="mt-4 space-y-0.5">
-          <li className="px-4 py-2 text-sm text-text-secondary">Sales list</li>
-          <li className="px-4 py-2 text-sm text-text-secondary">Goals</li>
-          <li className="px-4 py-2 text-sm text-text-secondary flex items-center justify-between">
+        <ul className="mt-3 space-y-0.5 px-2">
+          <li className="px-3 py-1.5 text-sm text-text-secondary rounded-md cursor-pointer hover:bg-background">Sales list</li>
+          <li className="px-3 py-1.5 text-sm text-text-secondary rounded-md cursor-pointer hover:bg-background">Goals</li>
+          <li className="px-3 py-1.5 text-sm text-text-secondary rounded-md cursor-pointer hover:bg-background flex items-center justify-between">
             <span>Dashboard</span>
-            <span className="text-text-muted">+</span>
+            <span className="text-text-muted text-xs">+</span>
           </li>
         </ul>
 
-        <div className="mt-4">
-          <div className="px-4 py-2 text-xs font-medium text-text-muted uppercase tracking-wide">Codename</div>
-          <ul className="space-y-0.5">
-            <li className="px-4 py-2 text-sm text-text-secondary flex items-center justify-between">
+        <div className="mt-3">
+          <div className="px-5 py-1.5 text-xs font-medium text-text-muted">Codename</div>
+          <ul className="space-y-0.5 px-2">
+            <li className="px-3 py-1.5 text-sm text-text-secondary rounded-md cursor-pointer hover:bg-background flex items-center justify-between">
               <span>Shared with me</span>
-              <span className="text-text-muted">›</span>
+              <span className="text-text-muted text-xs">⌄</span>
             </li>
             <ul className="space-y-0.5">
-              <li className="px-8 py-1.5 text-sm text-text-secondary">Cargo2go</li>
-              <li className="px-8 py-1.5 text-sm text-text-secondary flex items-center justify-between">
+              <li className="pl-7 pr-3 py-1.5 text-sm text-text-secondary rounded-md cursor-pointer hover:bg-background">Cargo2go</li>
+              <li className="pl-7 pr-3 py-1.5 text-sm text-text-secondary rounded-md cursor-pointer hover:bg-background flex items-center justify-between">
                 <span>Cloudz3r</span>
-                <span className="w-5 h-5 rounded-full bg-primary-light text-primary text-xs flex items-center justify-center">2</span>
+                <span className="w-5 h-5 rounded-full bg-primary-light text-primary text-xs font-medium flex items-center justify-center">2</span>
               </li>
-              <li className="px-8 py-1.5 text-sm text-text-secondary">Idiomo</li>
-              <li className="px-8 py-1.5 text-sm text-text-secondary">Syllables</li>
-              <li className="px-8 py-1.5 text-sm text-text-secondary">x-0b</li>
+              <li className="pl-7 pr-3 py-1.5 text-sm text-text-secondary rounded-md cursor-pointer hover:bg-background">Idiomo</li>
+              <li className="pl-7 pr-3 py-1.5 text-sm text-text-secondary rounded-md cursor-pointer hover:bg-background">Syllables</li>
+              <li className="pl-7 pr-3 py-1.5 text-sm text-text-secondary rounded-md cursor-pointer hover:bg-background">x-0b</li>
             </ul>
           </ul>
         </div>
 
-        <div className="mt-4">
-          <div className="px-4 py-2 text-xs font-medium text-text-muted uppercase tracking-wide flex items-center justify-between">
+        <div className="mt-3">
+          <div className="px-5 py-1.5 text-xs font-medium text-text-muted flex items-center justify-between">
             <span>Reports</span>
-            <span>+</span>
+            <span className="cursor-pointer hover:text-text-secondary">+</span>
           </div>
-          <ul className="space-y-0.5">
-            <li className="px-4 py-2 text-sm text-text-secondary flex items-center justify-between">
+          <ul className="space-y-0.5 px-2">
+            <li className="px-3 py-1.5 text-sm text-text-secondary rounded-md cursor-pointer hover:bg-background flex items-center justify-between">
               <span>Share with me</span>
-              <span className="text-text-muted">›</span>
+              <span className="text-text-muted text-xs">⌄</span>
             </li>
             <ul className="space-y-0.5">
-              <li className="px-8 py-1.5 text-sm text-text-secondary">Deals by user</li>
-              <li className="px-8 py-1.5 text-sm text-text-secondary">Deal duration</li>
+              <li className="pl-7 pr-3 py-1.5 text-sm text-text-secondary rounded-md cursor-pointer hover:bg-background">Deals by user</li>
+              <li className="pl-7 pr-3 py-1.5 text-sm text-text-secondary rounded-md cursor-pointer hover:bg-background">Deal duration</li>
             </ul>
-            <li className="px-4 py-2 text-sm text-text-secondary flex items-center justify-between">
+            <li className="px-3 py-1.5 text-sm text-text-secondary rounded-md cursor-pointer hover:bg-background flex items-center justify-between">
               <span>My reports</span>
-              <span className="text-text-muted">›</span>
+              <span className="text-text-muted text-xs">⌄</span>
             </li>
             <ul className="space-y-0.5">
-              <li className="px-8 py-1.5 text-sm text-text-secondary">Emails received</li>
-              <li className="px-8 py-1.5 text-sm text-text-secondary">Deal duration</li>
+              <li className="pl-7 pr-3 py-1.5 text-sm text-text-secondary rounded-md cursor-pointer hover:bg-background">Emails received</li>
+              <li className="pl-7 pr-3 py-1.5 text-sm text-text-secondary rounded-md cursor-pointer hover:bg-background">Deal duration</li>
             </ul>
-            <li className="px-4 py-2 text-sm text-primary font-medium">New report</li>
-            <li className="px-4 py-2 text-sm text-text-secondary flex items-center justify-between">
+            <li className="px-3 py-1.5 text-sm text-primary font-medium rounded-md cursor-pointer">New report</li>
+            <li className="px-3 py-1.5 text-sm text-text-secondary rounded-md cursor-pointer hover:bg-background flex items-center justify-between">
               <span>Analytics</span>
-              <span className="w-5 h-5 rounded-full bg-primary text-surface text-xs flex items-center justify-center">7</span>
+              <span className="w-5 h-5 rounded-full bg-primary text-surface text-xs font-medium flex items-center justify-center">7</span>
             </li>
           </ul>
         </div>
 
-        <div className="mt-4 px-4 py-2 text-sm text-text-secondary">
-          ⚙ Manage folders
+        <div className="mt-3 px-2">
+          <div className="px-3 py-1.5 text-sm text-text-secondary rounded-md cursor-pointer hover:bg-background">
+            ⚙ Manage folders
+          </div>
         </div>
       </nav>
 
-      <div className="p-4 space-y-2 border-t border-border">
-        <div className="w-10 h-10 rounded-full bg-background"></div>
-        <div className="w-8 h-8 flex items-center justify-center text-text-muted">⚙</div>
+      <div className="p-4 flex flex-col gap-3 border-t border-border">
+        <div className="w-9 h-9 rounded-full bg-background cursor-pointer"></div>
+        <div className="w-8 h-8 flex items-center justify-center text-text-muted cursor-pointer hover:text-text-secondary">⚙</div>
       </div>
     </aside>
   );

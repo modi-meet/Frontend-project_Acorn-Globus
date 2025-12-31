@@ -11,7 +11,7 @@
   --color-text-muted: #9CA3AF;
   
   --color-surface: #FFFFFF;
-  --color-background: #F9FAFB;
+  --color-background: #F5F5F5;
   --color-border: #E5E7EB;
   
   --color-success: #10B981;
@@ -23,5 +23,7 @@
     font-family: var(--font-sans);
     color: var(--color-text-primary);
     background-color: var(--color-background);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
