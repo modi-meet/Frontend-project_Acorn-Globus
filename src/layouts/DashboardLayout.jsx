@@ -9,7 +9,7 @@ function DashboardLayout({ children }) {
       <div className="flex-1 flex flex-col min-w-0">
         <Topbar />
         <main className="flex-1 p-5 pt-0 overflow-hidden relative">
-          <div className="w-full h-full bg-white rounded-[32px] overflow-y-auto p-6 shadow-[0_4px_20px_rgba(0,0,0,0.02)] scroll-smooth">
+          <div className="w-full h-full bg-white rounded-[32px] overflow-y-auto no-scrollbar p-6 shadow-[0_4px_20px_rgba(0,0,0,0.02)] scroll-smooth">
             {children}
           </div>
         </main>

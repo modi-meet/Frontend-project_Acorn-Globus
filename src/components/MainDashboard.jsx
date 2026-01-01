@@ -220,7 +220,7 @@ function RevenueDistribution() {
 
 function PlatformStats() {
     return (
-        <div className="bg-gray-50/80 rounded-[32px] p-4 h-full flex flex-col">
+        <div className="bg-gray-50/80 rounded-[32px] p-4 shadow-sm">
             <div className="flex items-center justify-between mb-4">
                 <button className="p-2 hover:bg-gray-100 rounded-xl transition-colors text-gray-400">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -279,7 +279,7 @@ function PlatformStats() {
 
 function DealsChart() {
     return (
-        <div className="bg-gray-50/80 rounded-[32px] p-4 h-full flex flex-col">
+        <div className="bg-gray-50/80 rounded-[32px] p-4 shadow-sm">
             {/* Header */}
             <div className="flex items-center justify-between mb-1 px-1">
                 <button className="flex items-center gap-1 text-gray-400 hover:text-gray-600 transition-colors">
