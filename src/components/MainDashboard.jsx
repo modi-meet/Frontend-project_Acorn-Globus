@@ -220,8 +220,8 @@ function RevenueDistribution() {
 
 function PlatformStats() {
     return (
-        <div className="bg-gray-50/80 rounded-[32px] p-5 h-full flex flex-col">
-            <div className="flex items-center justify-between mb-6 px-1">
+        <div className="bg-gray-50/80 rounded-[32px] p-4 h-full flex flex-col">
+            <div className="flex items-center justify-between mb-4">
                 <button className="p-2 hover:bg-gray-100 rounded-xl transition-colors text-gray-400">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -239,9 +239,9 @@ function PlatformStats() {
                 </button>
             </div>
 
-            <div className="space-y-3 flex-1 overflow-y-auto no-scrollbar pr-1">
+            <div className="space-y-2 flex-1 overflow-y-auto no-scrollbar">
                 {/* Dribbble */}
-                <div className="bg-white rounded-2xl p-3.5 flex items-center border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:border-pink-100 transition-colors cursor-pointer group">
+                <div className="bg-white rounded-2xl p-3 flex items-center border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:border-pink-100 transition-colors cursor-pointer group">
                     <div className="w-10 h-10 rounded-full flex items-center justify-center text-[#EA4C89] bg-pink-50 text-xl overflow-hidden shrink-0">
                         <img src="/icons/dribbble-logo-fill-svgrepo-com.svg" className="w-6 h-6" alt="Dribbble" style={{ filter: 'invert(36%) sepia(93%) saturate(1755%) hue-rotate(317deg) brightness(93%) contrast(93%)' }} />
                     </div>
@@ -251,7 +251,7 @@ function PlatformStats() {
                 </div>
 
                 {/* Instagram */}
-                <div className="bg-white rounded-2xl p-3.5 flex items-center border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:border-orange-100 transition-colors cursor-pointer group">
+                <div className="bg-white rounded-2xl p-3 flex items-center border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:border-orange-100 transition-colors cursor-pointer group">
                     <div className="w-10 h-10 rounded-full flex items-center justify-center text-white shrink-0 overflow-hidden relative">
                         <div className="absolute inset-0 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600"></div>
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="relative z-10"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
@@ -262,7 +262,7 @@ function PlatformStats() {
                 </div>
 
                 {/* Behance */}
-                <div className="bg-white rounded-2xl p-3.5 flex items-center border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:border-blue-100 transition-colors cursor-pointer group">
+                <div className="bg-white rounded-2xl p-3 flex items-center border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:border-blue-100 transition-colors cursor-pointer group">
                     <div className="w-10 h-10 rounded-full flex items-center justify-center shrink-0">
                         <span className="text-[#1769FF] text-xl font-black tracking-tighter">Bē</span>
                     </div>
@@ -279,9 +279,9 @@ function PlatformStats() {
 
 function DealsChart() {
     return (
-        <div className="bg-gray-50/80 rounded-[32px] p-5 h-full flex flex-col">
+        <div className="bg-gray-50/80 rounded-[32px] p-4 h-full flex flex-col">
             {/* Header */}
-            <div className="flex items-center justify-between mb-2 px-1">
+            <div className="flex items-center justify-between mb-1 px-1">
                 <button className="flex items-center gap-1 text-gray-400 hover:text-gray-600 transition-colors">
                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -299,7 +299,7 @@ function DealsChart() {
             </div>
 
             {/* Chart Area */}
-            <div className="flex-1 flex items-end justify-between gap-1.5 px-0 pb-4 pt-4">
+            <div className="flex-1 flex items-end justify-between gap-1.5 px-0 pb-2 pt-2">
                 {/* Behance - Striped */}
                 <div className="w-[18%] bg-white rounded-2xl shadow-sm relative flex flex-col items-center pt-4" style={{ height: '55%' }}>
                     <span className="text-[#1769FF] font-black text-sm">Bē</span>
@@ -343,9 +343,9 @@ function DealsChart() {
 
 function PlatformValueChart() {
     return (
-        <div className="bg-gray-50/80 rounded-[32px] p-5 shadow-sm">
+        <div className="bg-gray-50/80 rounded-[32px] p-4 shadow-sm">
             {/* Header */}
-            <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center justify-between mb-3">
                 <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full border border-pink-100 flex items-center justify-center bg-white shadow-sm">
                         <img src="/icons/dribbble-logo-fill-svgrepo-com.svg" className="w-6 h-6" alt="Dribbble" style={{ filter: 'invert(36%) sepia(93%) saturate(1755%) hue-rotate(317deg) brightness(93%) contrast(93%)' }} />
@@ -376,7 +376,7 @@ function PlatformValueChart() {
                     </div>
 
                     {/* Main Content */}
-                    <div className="flex-1 py-5 pr-5 relative z-10 flex flex-col justify-center space-y-4">
+                    <div className="flex-1 py-4 pr-4 relative z-10 flex flex-col justify-center space-y-3">
                         <div>
                             <div className="text-[10px] opacity-80 font-medium uppercase tracking-wide mb-0.5">Revenue</div>
                             <div className="text-xl font-bold tracking-tight">$18,552</div>
@@ -397,7 +397,7 @@ function PlatformValueChart() {
                 </div>
 
                 {/* Right Chart Area */}
-                <div className="flex-1 relative pt-4 pb-1 pl-2">
+                <div className="flex-1 relative pt-2 pb-1 pl-2">
                     {/* Grid Lines */}
                     <div className="absolute inset-0 flex flex-col justify-between text-[9px] text-gray-300 font-medium pointer-events-none pb-12 pr-4 pl-4 pt-6">
                         <div className="flex items-center gap-4 w-full"><div className="w-full h-px border-t border-dashed border-gray-200"></div><span>$14,500</span></div>
@@ -569,7 +569,7 @@ function MikasaBlock() {
 
             {/* Work with platforms Card */}
             <div className="bg-white rounded-2xl border border-gray-100 p-5 shadow-sm">
-                <div className="flex items-center justify-between mb-5">
+                <div className="flex items-center justify-between mb-2">
                     <span className="text-sm font-bold text-gray-900">Work with platforms</span>
                     <div className="flex items-center gap-1 px-2 py-1 rounded-lg bg-emerald-500 text-white text-[10px] font-bold shadow-sm shadow-emerald-200">
                         <span>↑ 3</span>
@@ -577,7 +577,7 @@ function MikasaBlock() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-3 min-h-[220px]">
+                <div className="grid grid-cols-2 gap-2 min-h-[220px]">
                     {/* Left: Dribbble large card */}
                     <div className="bg-white rounded-2xl border border-gray-100 p-4 row-span-2 shadow-[0_2px_8px_rgba(0,0,0,0.02)] flex flex-col justify-between group hover:border-pink-200 transition-colors cursor-pointer relative overflow-hidden">
                         <div className="flex items-center gap-2 relative z-10">
@@ -640,8 +640,8 @@ function MikasaBlock() {
                 </div>
 
                 {/* Sales dynamic */}
-                <div className="mt-5">
-                    <div className="flex items-center justify-between mb-4">
+                <div className="mt-1">
+                    <div className="flex items-center justify-between">
                         <span className="text-sm font-bold text-gray-900">Sales dynamic</span>
                         <button className="w-6 h-6 flex items-center justify-center rounded-full hover:bg-gray-100 text-gray-400 transition-colors">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M7 17l9.2-9.2M17 17V7H7" /></svg>
