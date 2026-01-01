@@ -1,23 +1,18 @@
+
 import Sidebar from '../components/Sidebar';
 import Topbar from '../components/Topbar';
 
-function MainContent({ children }) {
+function DashboardLayout({ children }) {
   return (
-    <main className="flex-1 bg-background p-6 overflow-auto">
-      {children}
-    </main>
-  );
-}
-
-function DashboardLayout() {
-  return (
-    <div className="flex min-w-[1280px] h-screen bg-background overflow-hidden">
+    <div className="flex min-w-[1280px] h-screen bg-[#FDFBF9] overflow-hidden font-sans">
       <Sidebar />
-      <div className="flex flex-col flex-1 min-w-0 overflow-hidden">
+      <div className="flex-1 flex flex-col min-w-0">
         <Topbar />
-        <MainContent>
-          {/* Main content region */}
-        </MainContent>
+        <main className="flex-1 p-5 pt-0 overflow-hidden relative">
+          <div className="w-full h-full bg-white rounded-[32px] overflow-y-auto p-6 shadow-[0_4px_20px_rgba(0,0,0,0.02)] scroll-smooth">
+            {children}
+          </div>
+        </main>
       </div>
     </div>
   );
